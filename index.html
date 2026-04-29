@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GENTS BARBER // LEYTONSTONE TERMINAL</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            background-color: #0a0a0a;
+            color: #e5e5e5;
+            font-family: 'JetBrains Mono', monospace;
+            background-image: radial-gradient(#1a1a1a 1px, transparent 1px);
+            background-size: 30px 30px;
+        }
+        .glitch-text { text-transform: uppercase; letter-spacing: 0.2em; }
+        .terminal-border { border: 1px solid #333; }
+        .btn-action {
+            background: white;
+            color: black;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        .btn-action:hover {
+            background: #d1d1d1;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body class="min-h-screen p-6 md:p-12">
+
+    <nav class="flex justify-between items-center mb-24 max-w-6xl mx-auto">
+        <div class="flex gap-4">
+            <span class="text-xs opacity-50">[ GB_SYS.V1 ]</span>
+        </div>
+        <div class="flex gap-8 text-xs font-bold uppercase tracking-widest">
+            <a href="#" class="hover:text-white">Services</a>
+            <a href="#" class="hover:text-white">Location</a>
+            <a href="#" class="hover:text-white">Contact</a>
+        </div>
+    </nav>
+
+    <main class="max-w-4xl mx-auto text-center mb-32">
+        <p class="text-xs opacity-60 mb-4 tracking-[0.5em]">LOC // LEYTONSTONE.E11</p>
+        
+        <h1 class="text-6xl md:text-8xl font-bold mb-8 glitch-text italic">
+            GENTS<br>BARBER
+        </h1>
+
+        <div class="mb-12">
+            <h2 class="text-2xl md:text-3xl font-bold tracking-tighter opacity-90">
+                PRECISION CUTS. <br> 
+                SHARPENED & SERVICED.
+            </h2>
+            <p class="mt-6 text-sm opacity-50 max-w-md mx-auto leading-relaxed">
+                Mastering the craft at 724 High Road. Every fade verified. Every beard sculpted. The local standard for the modern gentleman.
+            </p>
+        </div>
+
+        <div class="flex flex-col gap-4 items-center">
+            <button class="btn-action px-12 py-4 w-full max-w-sm flex items-center justify-center gap-2">
+                <i data-lucide="calendar"></i> BOOK THE CHAIR
+            </button>
+            <button class="border border-white/20 px-12 py-4 w-full max-w-sm hover:bg-white/5 transition-all uppercase text-xs font-bold tracking-widest">
+                View Price List
+            </button>
+        </div>
+        
+        <div class="mt-12 opacity-40 text-[10px] tracking-[0.3em]">
+            ↓ SCROLL // 001
+        </div>
+    </main>
+
+    <section class="max-w-6xl mx-auto border-t border-white/10 pt-12">
+        <div class="flex justify-between items-end mb-8">
+            <div>
+                <span class="text-xs opacity-40">[ 002 ] // SERVICE_MENU</span>
+                <h3 class="text-4xl font-bold italic">THE SPEC</h3>
+            </div>
+            <div class="text-right text-[10px] opacity-40">
+                STATUS: ACCEPTING CLIENTS<br>
+                WAIT_TIME: 15-20 MIN
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="terminal-border p-6 hover:bg-white/5 transition-all group">
+                <div class="flex justify-between mb-4">
+                    <i data-lucide="scissors" class="w-5 h-5 opacity-50"></i>
+                    <span class="text-xs opacity-50">£15.00+</span>
+                </div>
+                <h4 class="font-bold mb-2">SIGNATURE FADE</h4>
+                <p class="text-xs opacity-40 leading-relaxed">Precision taper or skin fade using industrial grade tools. Sharp finish guaranteed.</p>
+            </div>
+
+            <div class="terminal-border p-6 hover:bg-white/5 transition-all group">
+                <div class="flex justify-between mb-4">
+                    <i data-lucide="clippers" class="w-5 h-5 opacity-50"></i>
+                    <span class="text-xs opacity-50">£10.00+</span>
+                </div>
+                <h4 class="font-bold mb-2">BEARD SCULPT</h4>
+                <p class="text-xs opacity-40 leading-relaxed">Line-up, trim, and conditioning. Architecture for your face.</p>
+            </div>
+
+            <div class="terminal-border p-6 hover:bg-white/5 transition-all group">
+                <div class="flex justify-between mb-4">
+                    <i data-lucide="zap" class="w-5 h-5 opacity-50"></i>
+                    <span class="text-xs opacity-50">£25.00</span>
+                </div>
+                <h4 class="font-bold mb-2">FULL OVERHAUL</h4>
+                <p class="text-xs opacity-40 leading-relaxed">The works. Haircut, beard treatment, and hot towel finish.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="max-w-6xl mx-auto mt-32 border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between gap-8 opacity-60 text-[10px] uppercase tracking-widest">
+        <div>
+            <p>ADDRESS: 724 HIGH ROAD LEYTONSTONE, LONDON, E11 3AJ</p>
+            <p>OPEN: MON-SUN // 09:00 - 21:00</p>
+        </div>
+        <div class="text-right">
+            <p>© 2026 GENTS BARBER LTD</p>
+            <p>TERMINAL CONNECTION: STABLE</p>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+    </script>
+</body>
+</html>
